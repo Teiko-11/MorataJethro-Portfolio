@@ -1,0 +1,58 @@
+
+.headersite{
+    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.navsite{
+
+    font-size: small;
+    background-color: rgb(164, 165, 219);
+    display: flex;
+    padding: 5px;
+    gap: 30px;
+    justify-content: center;
+    
+}
+
+.divsite{
+
+   background-color: chocolate;  
+   display: flex;
+   padding: 30px;
+   
+
+}
+
+.box1{
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    border: 10px;
+    background-color: beige;
+    flex: 7;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.box2{
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    border: 10px;
+    background-color: burlywood;
+    flex: 3;
+    padding: 20px;
+    border-radius: 20px;
+
+
+
+}
+
+.footersite{
+
+    text-align: center;
+    background-color: turquoise;
+
+}

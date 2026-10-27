@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION</title>
+</head>
+<body>
+    <center>
+         <header style="background-color: aquamarine; padding: 20px">
+
+            <h1>Student Registration</h1>
+            <p>Welcome to Registration Page</p>
+
+        </header>
+
+        <Nav style="background-color: rgba(231, 224, 255, 0.658);  display: flex; justify-content: center; gap: 50px">
+            
+            <a href="HOME.html">Home</a>
+            <a href="ABOUT.html">About</a>
+            <a href="CONTACT.html">Contact</a>
+
+        </Nav>
+    </center>
+       
+
+        <section>
+            
+            <article>
+                <h2>STUDENT FORM</h2>
+            </article>
+
+             <form>
+
+                <div style="border: solid;">
+                    Full Name:<br><input type="text" name="fullname"/>   
+                    <br><br>
+
+                    Password:<br><input type="password" name="password"/> 
+                    <br><br>
+
+                    Email:<br><input type="text" name="email"/> 
+                    <br><br>
+
+                    Age<br><input type="text" name="age"/> 
+                    <br><br>
+
+                    Gender<br>
+                    <input type="radio" name="gender" value="male"/>Male
+                    <input type="radio" name="gender" value="female"/>Female
+                    <br><br>
+                    
+                </div>
+                br
+                <div style="border: solid;">
+                    Programming Language <br>
+                    <input type="checkbox" name="language" value="on"> JAVA
+                    <input type="checkbox" name="language" value="on"> C++
+                    <input type="checkbox" name="language" value="on"> HTML
+                    <br><br>
+
+                    <select name="dropdown"><br>
+                    <option value="SUBJECTS" selected>SUBJECTS</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Science">Science</option>
+                    <option value="English">English</option>
+                 </select><br><br>
+
+                </div>
+                 
+
+                 
+
+                 Description:<br>
+                 <textarea rows="5" cols="50" name="description" placeholder=" Enter description here..."></textarea>    
+          
+             </form>
+
+        </section>
+
+            <input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="reset"  value="Reset" />
+            <input type="button" name="ok" value="OK"  />
+            
+
+        
+       
+</body>
+</html>

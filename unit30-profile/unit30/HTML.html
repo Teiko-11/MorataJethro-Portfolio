@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Profile</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 16px;
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #000000, #914c72);
+            color: rgb(51, 77, 114);
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .profile {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #684949;
+            padding: 32px 28px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(89, 88, 110, 0.15);
+        }
+
+        .title {
+            margin: 0 0 8px;
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        .desc { 
+            margin: 0 0 24px;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        .student-info {
+            background: #e0a0a0;
+            margin: 0 auto 24px;
+            padding: 20px 24px;
+            border-radius: 14px;
+            border: 2px solid #c7d2fe;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        .student-info p {
+            margin: 8px 0;
+        }
+
+        .student-info span {
+            color: #141414;
+        }
+
+        #pickcourse {
+            color:rgb(105, 81, 81);
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            color: #e4d9d9;
+            background: #000000;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 18px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        button:active {
+            transform: scale(0.97);
+        }
+
+        #c-title {
+            background: #000000;
+        }
+
+        #hide-profile {
+            background: #000000;
+        }
+
+        #show-profile {
+            background: #000000;
+        }
+
+        #hover {
+            background-color: rgb(128, 104, 104);
+            width: 100%;
+            margin: 6px 0 0;
+            padding: 6px;
+            border-radius: 8px;
+            color: #523c3c;
+            min-height: 1.2em;
+            font-size: 0.9rem;
+        }
+
+        .choosecourse {
+            margin: 24px 0;
+        }
+
+        #course {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            border: 2px solid #7a4343;
+            border-radius: 8px;
+            background: #000000;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .student-list {
+            margin-top: 8px;
+        }
+
+        .list-title {
+            display: block;
+            font-size: 1.25rem;
+            color: #f3f2f2;
+        }
+
+        .list-sub {
+            color: #6b7280;
+            margin: 4px 0 14px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border: 1px solid #c7d2fe;
+        }
+
+        th {
+            padding: 12px;
+            background: #000000;
+            color: #b9a5a5;
+            border: 1px solid #c7d2fe;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #e0e7ff;
+        }
+
+        .list-end {
+            display: block;
+            margin-top: 14px;
+            color: #7d8eb1;
+            font-size: 0.9rem;
+        }
+
+        .action-text {
+            margin: 20px 0 10px;
+            color: #374151;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile" id="main">
+        <h1 class="title" id="title">My Student Profile</h1>
+        <p class="desc" id="desc">Welcome to my Profile</p>
+
+        <div class="student-info" id="profile">
+            <p><span>Name:</span> <b>Jethro Morata</b></p>
+            <p><span>Course:</span> <b id="pickcourse">BSIT</b></p>
+            <p><span>Year Level:</span> <b>3rd Year</b></p>
+        </div>
+
+        <div class="buttons">
+            <button id="c-title">Change Title</button>
+            <button id="hide-profile">Hide Profile</button>
+            <button id="show-profile">Show Profile</button>
+            <p id="hover"></p>
+        </div>
+
+        <div class="choosecourse" id="choosecourse">
+            <select name="" id="course">
+                <option hidden>Select Course</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BSTM">BSTM</option>
+                <option value="BSHM">BSHM</option>
+            </select>
+        </div>
+
+        <div class="student-list">
+            <b class="list-title">Student List</b>
+            <p class="list-sub">Registered Students</p>
+
+            <div class="table-wrap">
+                <table id="table">
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year Level</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Charles Julia Valdez</td>
+                        <td>BSIT</td>
+                        <td>3rd Year</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Carel Martin</td>
+                        <td>BSCS</td>
+                        <td>3rd Year</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ralph Marcos</td>
+                        <td>BSIT1</td>
+                        <td>3rd Year</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>John Ralph Agoy Agoy</td>
+                        <td>BSIT2</td>
+                        <td>4th Year</td>
+                    </tr>
+                </table>
+            </div>
+
+            <b class="list-end">End of Student List</b>
+            <p class="action-text">Choose an action to Apply</p>
+            <button id="odd">Apply Odd Rows</button>
+            <button id="even">Apply Even Rows</button>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
